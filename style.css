@@ -1,3 +1,4 @@
+/* Version 1.1 - 11/05/2023 - Added Delete All button           */
 /* Version 1.0 - 11/05/2023 - Initial build of the application  */
 /*==============================================================*/
 
@@ -20,7 +21,7 @@
     max-width: 540px;
     background: #fff;
     margin: 100px auto 20px;
-    padding: 40px 30px 70px;
+    padding: 40px 30px 10px;
     border-radius: 10px;
 }
 
@@ -46,6 +47,15 @@
     margin-bottom: 25px;
 }
 
+.row2{
+
+    display: block;
+    align-items: right;
+    padding-top: 30px;
+    margin-left: 380px;
+
+}
+
 input{
     flex: 1;
     border: none;
@@ -58,12 +68,12 @@ input{
 button{
     border: none;
     outline: none;
-    padding: 16px 50px;
+    padding: 16px;
     background: #ff5945;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 40px;
+    border-radius: 10px;
 }
 
 ul li{
