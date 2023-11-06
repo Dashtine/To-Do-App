@@ -1,3 +1,4 @@
+<!--  Version 1.1 - 11/05/2023 - Added Delete All button           -->
 <!--  Version 1.0 - 11/05/2023 - Initial build of the application  -->
 <!--===============================================================-->
 
@@ -17,22 +18,12 @@
             <input type="text" id="input-box" placeholder="Add your text">
             <button onclick="addTask()">Add</button>
         </div>
-        <ul id="list-container">
-            <!-- <li class="checked">Task 1</li>
-            <li>Task 2</li>
-            <li>Task 3</li>
-            <li>Task 4</li> -->
-
-        </ul>
+        <ul id="list-container"></ul>
+        <div class="row2">
+            <button id="deleteAll" onclick="deleteAll()" style="display: none;">Delete All</button>
+        </div>
     </div>
 </div>
 <script src="script.js"></script>
 </body>
-
-
-
-
-
-
-
 </html>
