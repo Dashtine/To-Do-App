@@ -1,3 +1,4 @@
+<!--  Version 1.11 - 11/07/2023 - Submit task by pressing enter key-->
 <!--  Version 1.1 - 11/05/2023 - Added Delete All button           -->
 <!--  Version 1.0 - 11/05/2023 - Initial build of the application  -->
 <!--===============================================================-->
@@ -15,7 +16,9 @@
     <div class="todo-app"> 
         <h2> To Do List <img src="icon.png"></h2>
         <div class="row">
+            <form id="taskForm">
             <input type="text" id="input-box" placeholder="Add your text">
+            </form>
             <button onclick="addTask()">Add</button>
         </div>
         <ul id="list-container"></ul>
