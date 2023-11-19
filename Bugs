@@ -1,2 +1,3 @@
 1. The "Delete All" button still shows if you remove all the tasks manually clicking the 'x' buttons.
 2. Typing text into the task input box only spans to half of the gray area.
+3. When there are tasks on the list and the page is refreshed, the Delete All button goes away.

@@ -8,13 +8,12 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>To-Do List App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-
 <body>
 <div class="container">
     <div class="todo-app"> 
-        <h2> To Do List <img src="icon.png"></h2>
+        <h2> To Do List <img src="{{ url_for('static', filename='icon.png') }}"></h2>
         <div class="row">
             <form id="taskForm">
             <input type="text" id="input-box" placeholder="Add your text">
@@ -27,6 +26,6 @@
         </div>
     </div>
 </div>
-<script src="script.js"></script>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
