@@ -1,3 +1,4 @@
+/* Version 2.10 - 11/26/2023 - Added Save button                */
 /* Version 1.11 - 11/07/2023 - Submit task by pressing enter key*/
 /* Version 1.1 - 11/05/2023 - Added Delete All button           */
 /* Version 1.0 - 11/05/2023 - Initial build of the application  */
@@ -48,13 +49,17 @@
     margin-bottom: 25px;
 }
 
-.row2{
-
-    display: block;
-    align-items: right;
+.save_or_reset {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 30px;
-    margin-left: 380px;
+    margin-left: 330px;
+}
 
+.save_or_reset button {
+    margin-right: 10px; /* Adjust the margin to create space between buttons */
+    /* Add any additional styling for the buttons */
 }
 
 input{

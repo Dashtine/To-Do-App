@@ -1,3 +1,4 @@
+<!--  Version 2.10 - 11/26/2023 - Added Save button                -->
 <!--  Version 1.11 - 11/07/2023 - Submit task by pressing enter key-->
 <!--  Version 1.1 - 11/05/2023 - Added Delete All button           -->
 <!--  Version 1.0 - 11/05/2023 - Initial build of the application  -->
@@ -21,8 +22,9 @@
             <button onclick="addTask()">Add</button>
         </div>
         <ul id="list-container"></ul>
-        <div class="row2">
-            <button id="deleteAll" onclick="deleteAll()" style="display: none;">Delete All</button>
+        <div class="save_or_reset">
+            <button id="save" onclick="save()" style="display: none;">Save</button>
+            <button id="reset" onclick="reset()" style="display: none;">Reset</button>
         </div>
     </div>
 </div>
