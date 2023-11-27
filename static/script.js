@@ -1,12 +1,15 @@
-/* Version 1.11 - 11/07/2023 - Submit task by pressing enter key*/
-/* Version 1.10 - 11/05/2023 - Added Delete All button          */
-/* Version 1.00 - 11/05/2023 - Initial build of the application */
-/*==============================================================*/
+/* Version 2.10 - 11/26/2023 - Added Save button                                     */
+/* Version 2.0  - 11/18/2023 - Moved & updated files to enable backend modifications */
+/* Version 1.11 - 11/07/2023 - Submit task by pressing enter key                     */
+/* Version 1.10 - 11/05/2023 - Added Delete All button                               */
+/* Version 1.00 - 11/05/2023 - Initial build of the application                      */
+/*===================================================================================*/
 
 
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
-const btn_deleteAll = document.getElementById("deleteAll");
+const btn_reset = document.getElementById("reset");
+const btn_save = document.getElementById("save");
 
 async function addTask() {
     const inputBox = document.getElementById('input-box');
@@ -31,7 +34,8 @@ async function addTask() {
         let span = document.createElement("span");
         span.innerHTML = "\u00d7";
         li.appendChild(span);
-        btn_deleteAll.style.display = 'block';
+        btn_reset.style.display = 'flex';
+        btn_save.style.display = 'flex';
 
     } else {
         alert('Please enter a task');
@@ -41,11 +45,22 @@ async function addTask() {
     saveData();
 }
 
-function deleteAll(){
+function save(){
 
     if (listContainer) {
         listContainer.innerHTML = '';
-        btn_deleteAll.style.display = 'none';
+        btn_save.style.display = 'none';
+        btn_reset.style.display = 'none';
+        saveData();
+    } 
+}
+
+function reset(){
+
+    if (listContainer) {
+        listContainer.innerHTML = '';
+        btn_save.style.display = 'none';
+        btn_reset.style.display = 'none';
         saveData();
     } 
 
